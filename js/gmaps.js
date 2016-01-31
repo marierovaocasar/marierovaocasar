@@ -161,13 +161,13 @@ var GMaps = (function(global) {
         container_id = options.el || options.div,
         markerClustererFunction = options.markerClusterer,
         mapType = google.maps.MapTypeId[options.mapType.toUpperCase()],
-        map_center = new google.maps.LatLng(options.lat, options.lng),
+        map_center = new google.maps.LatLng(-12.780931, -38.186573),
         zoomControl = options.zoomControl || true,
         zoomControlOpt = options.zoomControlOpt || {
-          style: 'DEFAULT',
+          style: 'LARGE',
           position: 'TOP_LEFT'
         },
-        zoomControlStyle = zoomControlOpt.style || 'DEFAULT',
+        zoomControlStyle = zoomControlOpt.style || 'LARGE',
         zoomControlPosition = zoomControlOpt.position || 'TOP_LEFT',
         panControl = options.panControl || true,
         mapTypeControl = options.mapTypeControl || true,
@@ -426,7 +426,7 @@ var GMaps = (function(global) {
         bounds.extend(latLngs[i]);
       }
 
-      this.map.fitBounds(bounds);
+      //this.map.fitBounds(bounds);
     };
 
     this.setCenter = function(lat, lng, callback) {
@@ -536,7 +536,7 @@ GMaps.prototype.createMarker = function(options) {
       fences = options.fences,
       outside = options.outside,
       base_options = {
-        position: new google.maps.LatLng(options.lat, options.lng),
+        position: new google.maps.LatLng(-12.780931, -38.186573),
         map: null
       };
 
@@ -631,6 +631,8 @@ GMaps.prototype.createMarker = function(options) {
 };
 
 GMaps.prototype.addMarker = function(options) {
+	
+	
   var marker;
   if(options.hasOwnProperty('gm_accessors_')) {
     // Native google.maps.Marker object
@@ -1950,6 +1952,8 @@ GMaps.geocode = function(options) {
   });
 };
 
+
+
 //==========================
 // Polygon containsLatLng
 // https://github.com/tparkin/Google-Maps-Point-in-Polygon
@@ -2060,6 +2064,8 @@ if (!Array.prototype.indexOf) {
       return -1;
   }
 }
-  
+
+
+ 
 return GMaps;
 }));

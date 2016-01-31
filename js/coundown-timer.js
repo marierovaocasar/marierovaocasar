@@ -6,8 +6,8 @@
 
 		//array of custom settings
 		var settings = { 
-			'date': null,
-			'format': null
+			'date': '8/10/2016 15:30:00',
+			'format': 'd-m-y'
 		};
 
 		//append the settings array to options
@@ -18,7 +18,7 @@
 		//main countdown function
 		function countdown_proc() {
 			
-			eventDate = Date.parse(settings['date']) / 1000;
+			eventDate = Date.parse('10/08/2016 15:00:00') / 1000;
 			currentDate = Math.floor($.now() / 1000);
 			
 			if(eventDate <= currentDate) {
