@@ -18,6 +18,9 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+		
+
+		
     </head><body>
         <header id="header" role="banner">
             <div class="main-nav">
@@ -44,9 +47,9 @@
 		                </a>
                         </div>
                         <div class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="scroll active">
-                                    <a href="index.html#home">Início</a>
+                            <ul  class="nav navbar-nav navbar-right">
+                                <li class="scroll">
+                                    <a href="index.html" >Início</a>
                                 </li>
                                 <li class="scroll">
                                     <a href="index.html#event">Noivos</a>
@@ -54,17 +57,17 @@
                                 <li class="scroll">
                                     <a href="index.html#about">Dress Code</a>
                                 </li>
-                                <li class="no-scroll">
-                                    <a href="index.html#sponsor">Local</a>
+                                <li class="scroll">
+                                    <a href="index.html#sponsor" class="external">Local</a>
                                 </li>
-                                <li class="no-scroll">
+                                <li class="scroll">
                                     <a href="index.html#ondeficar">Onde ficar</a>
                                 </li>
                                 <li>
-                                    <a class="no-scroll" href="#" >Presentes</a>
+                                    <a class="scroll" href="#" >Presentes</a>
                                 </li>
                                 <li class="scroll">
-                                    <a href="#rsvp">RSVP</a>
+                                    <a href="index.html#rsvp">RSVP</a>
                                 </li>
                             </ul>
                         </div>
@@ -101,9 +104,9 @@
                             <br>Porque quem casa, quer casa.</p> <br>
 						<p class="col-md-10" style="color: #FF3776; margin-bottom: 20px"> Pedimos como presente contribuições para a entrada de nossa primeira casinha.
 						<br>Se quiser contribuir, pode fazer da forma que preferir: transferência bancária, via Pagseguro ou boas intenções.
-						<br>Mas, por favor, preencha o formulário abaixo e nos envie um recadinho! :) Aliás, preencha o formulário mesmo que não possa nos dar presente, adoraremos receber seus votos de felicidade!
+						<br>Mas, por favor, preencha o formulário abaixo e nos envie um recadinho! :) Aliás, deixe seu recado mesmo que não possa nos dar presente, adoraremos receber seus votos de felicidade!
 						<br>
-						<br>PS: Não, não teremos sempre como vincular cada depósito entrando a quem o presenteou, nem à mensagem do formulário. Pois não precisamos saber. Todos receberão o mesmo abraço no casamento! :)
+						<br>PS: Não, não teremos como vincular cada depósito entrando a quem o presenteou, nem ao recado deixado. Pois não precisamos saber. Todos receberão o mesmo abraço no casamento! :)
                     <br>
 					</div>
                 </div>
@@ -113,12 +116,22 @@
                         
                         
                     </div>
-                    <div class="col-md-6">
-                        <img src="images/dadospagseguro.jpg" class="img-responsive">
-                       
-              
+                    <!--
+					<div class="col-md-6">
+                        <img src="images/dadospagseguro.jpg" class="img-responsive">      
                         
                     </div>
+					-->
+					<div class="col-md-6">
+					<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+<form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+<input type="hidden" name="currency" value="BRL" />
+<input type="hidden" name="receiverEmail" value="rodrigohgpontes@gmail.com" />
+<input type="image" src="images/dadospagseguro.jpg" name="submit" alt="Presente via PagSeguro" />
+</form>
+<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+					</div>
                     
                 </div>
 				<div class="row" style="margin-bottom: 30px; text-align: center">
@@ -158,8 +171,9 @@
         <script type="text/javascript" src="js/jquery.parallax.js"></script>
         <script type="text/javascript" src="js/coundown-timer.js"></script>
         <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-        <script type="text/javascript" src="js/jquery.nav.js"></script>
+       
         <script type="text/javascript" src="js/main.js"></script>
-    
+		
+
 
 </body></html>
