@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco);
 
 
 /*************************
@@ -7,7 +9,7 @@
 **************************/
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-size: 17px;
   color: #fff
 }
@@ -15,8 +17,8 @@ body {
 
 .btn {
   border-radius: 0;
-  font-family: 'Yanone Kaffeesatz','sans-serif';
-  font-size: 20px;
+  font-family: 'Sue Ellen Francisco','sans-serif';
+  font-size: 24px;
   padding: 9px 23px;
 }
 
@@ -34,9 +36,9 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Yanone Kaffeesatz', 'sans-serif';
+  font-family: 'Sue Ellen Francisco', 'sans-serif';
   font-weight: 300;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 h2 {
@@ -125,7 +127,7 @@ h2 {
   font-size: 22px;
   color: #fff;
   text-transform: uppercase;
-  font-family: 'Yanone Kaffeesatz', 'sans-serif';
+  font-family: 'Sue Ellen Francisco', 'sans-serif';
   font-weight: 300;
 }
 
@@ -195,7 +197,7 @@ h2 {
   opacity: 0.8;
   padding:10px 60px 35px;
   right: inherit;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #fff;
   text-align: left;
 }
@@ -289,7 +291,7 @@ h2 {
   display:inline-block;
   margin-right: 40px;
   text-align: center;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 18px;
   position: relative;
 }
@@ -306,8 +308,8 @@ h2 {
   line-height: 79px;
   width: 75px;
   border-radius: 10px;
-  border-right: 1px solid #9e3e2e;
-  border-bottom: 1px solid #9e3e2e;
+  border-right: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 #countdown li .days {
@@ -376,7 +378,7 @@ h2 {
   color: #FFFFFF;
   display: block;
   font-size: 24px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 .cart a i {
@@ -426,7 +428,7 @@ h2 {
   font-weight: 300;
   line-height: 26px;
   margin-top: 25px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 
@@ -462,7 +464,7 @@ h2 {
 **************************/
 
 #about {
-  background-color: #FF5D26;  
+  background-color: #777777;  
   position: relative;  
   width: 100%;
   display: flex;
@@ -486,7 +488,7 @@ h2 {
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 70px 70px 110px;
+  padding: 70px 70px 50px;
 }
 
 
@@ -496,7 +498,7 @@ h2 {
 
 .about-content p {
   font-size: 17px;
-  font-family: 'Dosis',sans-serif;
+  font-family: 'Arimo',sans-serif;
 }
 
 #about .btn-primary {
@@ -552,7 +554,7 @@ h2 {
 #twitter-feed .item p { 
   font-size: 24px;
   font-weight: 300;
-  font-family: 'Yanone Kaffeesatz','sans-serif';
+  font-family: 'Sue Ellen Francisco','sans-serif';
 }
 
 #twitter-feed .item p {
