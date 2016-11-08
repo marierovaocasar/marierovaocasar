@@ -335,25 +335,65 @@ h2 {
   border-left: 1px solid #e57b6d;
 }
 
-#countdown li:before {
-  background-color: #FFFFFF;
-  content: "";
-  height: 11px;
-  left: 0;
-  position: absolute;
-  top: 36px;
-  width: 1px;
+
+.countdowndois {
+  display: block !important;
+  overflow: hidden !important;
+  text-align: center !important;
+  padding: 0 !important;
+  
 }
 
-#countdown li:after {
-  background-color: #FFFFFF;
-  content: "";
-  height: 11px;
-  right:0;
-  position: absolute;
-  top: 36px;
-  width: 1px;
+.countdowndois li {
+  list-style: none !important;
+  display:inline-block !important;
+  margin-right: 20px !important;
+  text-align: center !important;
+  /*text-transform: uppercase;*/
+  font-size: 9px !important;
+  position: relative !important;
 }
+
+.countdowndois li:last-child {
+  margin-right: 0
+}
+
+.countdowndois li span {
+  display: block !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  height: 41px !important;
+  line-height: 39px !important;
+  width: 37px !important;
+  border-radius: 10px !important;
+  border-right: 1px solid #FFFFFF !important;
+  border-bottom: 1px solid #FFFFFF !important;
+}
+
+.countdowndois li .days {
+  background-color: #57BAB7 !important;
+  border-top: 1px solid #6ac1b1 !important;
+  border-left: 1px solid #6ac1b1 !important;
+}
+
+.countdowndois li .hours {
+  background-color: #FFD102; 
+  border-top: 1px solid #f2d470;
+  border-left: 1px solid #f2d470;
+}
+
+.countdowndois li .minutes {
+  background-color: #FF5D26;
+  border-top: 1px solid #e89565;
+  border-left: 1px solid #e89565;
+}
+
+.countdowndois li .seconds {
+  background-color: #FF3776;
+  border-top: 1px solid #e57b6d;
+  border-left: 1px solid #e57b6d;
+}
+
 
 .cart {
   background-color: #FFD102;  

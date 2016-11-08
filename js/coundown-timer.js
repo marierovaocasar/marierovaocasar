@@ -18,15 +18,15 @@
 		//main countdown function
 		function countdown_proc() {
 			
-			eventDate = Date.parse('10/08/2016 15:00:00') / 1000;
+			eventDate = Date.parse('10/08/2016 17:00:00') / 1000;
 			currentDate = Math.floor($.now() / 1000);
 			
-			if(eventDate <= currentDate) {
+			if(eventDate >= currentDate) {
 				callback.call(this);
 				clearInterval(interval);
 			}
 			
-			seconds = eventDate - currentDate;
+			seconds = currentDate - eventDate;
 			
 			days = Math.floor(seconds / (60 * 60 * 24)); //calculate the number of days
 			seconds -= days * 60 * 60 * 24; //update the seconds variable with no. of days removed
